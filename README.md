@@ -1,28 +1,62 @@
-# React + TypeScript + Vite
+# UnitedInTalk – Marketing Site (WIP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the development code for the upcoming **UnitedInTalk marketing page**, which will replace `explore.unitedintalk.com`. The project aims to deliver a clean, responsive, and modular landing site aligned with the company’s mission.
 
-Currently, two official plugins are available:
+## 🧩 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework:** React + Vite + TypeScript
+- **Styling:** TailwindCSS
+- **UI Library:** [shadcn/ui](https://ui.shadcn.dev/)
+- **Icons:** Lucide
+- **Status:** In Progress (as of June 21, 2025)
+- **Design Reference:** Based on collaborative Figma/Canva mockups
 
-## Expanding the ESLint configuration
+## ✅ Sections Implemented
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Sticky Navbar:** With logo and internal navigation links
+- **Hero Section:** Tagline, call-to-action, and phone mockup (placeholder image)
+- **How It Works:** Step-by-step breakdown with icons and copy
+- **Testimonials:** Static user quotes
+- **CTA Section:** Final push to sign up
+
+## 🗂️ Directory Structure
+
+```
+src/
+├── assets/                # Logos, mockups (temporary placeholders)
+├── components/            # Reusable sections
+│   ├── HeroSection.tsx
+│   ├── HowItWorks.tsx
+│   ├── TestimonialsSection.tsx
+│   ├── CTASection.tsx
+│   └── Navbar.tsx (merged into Hero)
+├── App.tsx                # Main layout
+└── main.tsx               # Vite entry
+```
+
+## 🔧 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/your-org/unitedintalk-marketing.git
+cd unitedintalk-marketing
+npm install
+npm run dev
+```
+
+## 🔍 ESLint & TypeScript Setup
+
+The repo uses Vite's recommended ESLint settings for React + TypeScript. For stricter production rules, you may expand the ESLint config:
 
 ```js
 export default tseslint.config({
   extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
     ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
     ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
     ...tseslint.configs.stylisticTypeChecked,
   ],
   languageOptions: {
-    // other options...
     parserOptions: {
       project: ['./tsconfig.node.json', './tsconfig.app.json'],
       tsconfigRootDir: import.meta.dirname,
@@ -31,24 +65,35 @@ export default tseslint.config({
 })
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Optional plugins:
 
 ```js
-// eslint.config.js
 import reactX from 'eslint-plugin-react-x'
 import reactDom from 'eslint-plugin-react-dom'
 
 export default tseslint.config({
   plugins: {
-    // Add the react-x and react-dom plugins
     'react-x': reactX,
     'react-dom': reactDom,
   },
   rules: {
-    // other rules...
-    // Enable its recommended typescript rules
     ...reactX.configs['recommended-typescript'].rules,
     ...reactDom.configs.recommended.rules,
   },
 })
 ```
+
+## 📌 Notes
+
+- **Logo and visual assets** will be swapped once final branding files are approved.
+- **Phone UI mockup** is a temporary placeholder — to be replaced with actual product visuals.
+- **Blog infrastructure** and **contact form logic** still under planning/discussion.
+
+---
+
+## Maintainer
+
+**Rudgino Chounoune**  
+Frontend Intern – UnitedInTalk  
+📧 rudginochounoune@gmail.com  
+🗓️ Updated: June 21, 2025
