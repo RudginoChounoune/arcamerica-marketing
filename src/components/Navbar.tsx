@@ -26,6 +26,12 @@ import {
   
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
+              <a href="/blog">Blog</a>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+  
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild>
               <Link to="/features">Features</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>

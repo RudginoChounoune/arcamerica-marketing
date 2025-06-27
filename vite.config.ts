@@ -14,4 +14,13 @@ export default defineConfig({
     react(),
     tailwindcss(),   // injects Tailwind’s PostCSS plugin
   ],
+  server: {
+    proxy: {
+      '/blog': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/blog/, ''),
+      },
+    },
+  },
 })
