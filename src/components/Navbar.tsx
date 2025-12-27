@@ -25,9 +25,13 @@ import {
           </NavigationMenuItem>
   
           <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <a href="/blog">Blog</a>
-            </NavigationMenuLink>
+            <a
+              href="https://blog.unitedintalk.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Blog
+            </a>
           </NavigationMenuItem>
   
           <NavigationMenuItem>
@@ -40,6 +44,16 @@ import {
             <NavigationMenuLink asChild>
               <Link to="/signup">Join Now</Link>
             </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <a
+              href="https://unitedintalk.com/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact
+            </a>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>

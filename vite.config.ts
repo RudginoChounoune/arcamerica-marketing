@@ -5,21 +5,15 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   resolve: {
-    alias: {
-      // so "@/components/…" maps to "<project-root>/src/components/…"
-      '@': path.resolve(__dirname, 'src'),
-    },
+    alias: { '@': path.resolve(__dirname, 'src') },
   },
-  plugins: [
-    react(),
-    tailwindcss(),   // injects Tailwind’s PostCSS plugin
-  ],
+  plugins: [react(), tailwindcss()],
   server: {
     proxy: {
       '/blog': {
-        target: 'http://localhost:8000',
+        target: 'http://localhost:8080',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/blog/, ''),
+        rewrite: path => path.replace(/^\/blog/, ''),
       },
     },
   },
