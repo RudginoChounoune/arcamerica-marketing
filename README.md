@@ -1,6 +1,6 @@
-# UnitedInTalk – Marketing Site (WIP)
+# ArcAmerica – Marketing Site (WIP)
 
-This repository contains the development code for the upcoming **UnitedInTalk marketing page**, which will replace `explore.unitedintalk.com`. The project aims to deliver a clean, responsive, and modular landing site aligned with the company’s mission.
+This repository contains the development code for the **ArcAmerica marketing site**, a clean, responsive, and modular landing page built to support product marketing, brand positioning, and user acquisition.
 
 ## 🧩 Project Overview
 
@@ -39,8 +39,8 @@ src/
 To run the project locally:
 
 ```bash
-git clone https://github.com/your-org/unitedintalk-marketing.git
-cd unitedintalk-marketing
+git clone https://github.com/RudginoChounoune/arcamerica-marketing.git
+cd arcamerica-marketing
 npm install
 npm run dev
 ```
@@ -94,6 +94,6 @@ export default tseslint.config({
 ## Maintainer
 
 **Rudgino Chounoune**  
-Frontend Intern – UnitedInTalk  
+Frontend Engineer  
 📧 rudginochounoune@gmail.com  
-🗓️ Updated: June 21, 2025
+🗓️ Updated: December 27, 2025
